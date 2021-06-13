@@ -2,76 +2,195 @@ PREFIX p: <http://otakusearch.com>
 PREFIX d: <http://otakusearch.com/ns/data#>
 
 #type
-d:type1     d:typeTitle "Anime";
-            d:isType d:P01, d:P02, d:P03, d:P04, d:P05, d:P06, d:P07, d:P08, d:P09, d:P10.
-d:type2     d:typeTitle "Manga";
-            d:isType d:P11, d:P12, d:P13, d:P14, d:P15, d:P16, d:P17, d:P18, d:P19, d:P20.
-d:type3     d:typeTitle "Light Novel";
-            d:isType d:P21, d:P22, d:P23, d:P24, d:P25, d:P26, d:P27, d:P28, d:P29, d:P30.
+d:type1 d:typeTitle "Anime".
+d:type2 d:typeTitle "Manga".
+d:type3 d:typeTitle "Light Novel".
 
 #author
-d:author1   d:authorTitle "Arakawa, Hiromu";
-            d:isAuthor d:P01, d:P12, d:P21.
-d:author2   d:authorTitle "Fuse";
-            d:isAuthor d:P02, d:P03, d:P04, d:P13, d:P22.
-d:author3   d:authorTitle "Fujikawa, Yuka";
-            d:isAuthor d:P05, d:P14, d:P23.
-d:author4   d:authorTitle "Diomedea";
-            d:isAuthor d:P06.
-d:author5   d:authorTitle "Kinema Citrus";
-            d:isAuthor d:P07.
-d:author6   d:authorTitle "TMS Entertainment";
-            d:isAuthor d:P08.
-d:author7   d:authorTitle "Kyoto Animation";
-            d:isAuthor d:P09.
-d:author8   d:authorTitle "Ooima, Yoshitoki";
-            d:isAuthor d:P10, d:P11.
-d:author9   d:authorTitle "Miura, Kentarou";
-            d:isAuthor d:P15.
-d:author10  d:authorTitle "Oda, Eiichiro";
-            d:isAuthor d:P16.
-d:author11  d:authorTitle "Tsukushi, Akihito";
-            d:isAuthor d:P17.
-d:author12  d:authorTitle "Kuzanagi, Mizuho";
-            d:isAuthor d:P18.
-d:author13  d:authorTitle "ONE";
-            d:isAuthor d:P19.
-d:author14  d:authorTitle "Ohba, Tsugumi";
-            d:isAuthor d:P20.
-d:author15  d:authorTitle "Kinosuke, Naito";
-            d:isAuthor d:P24.
-d:author16  d:authorTitle "Park Saenal";
-            d:isAuthor d:P25.
-d:author17  d:authorTitle "Sadoyeon";
-            d:isAuthor d:P26.
-d:author18  d:authorTitle "Yoo Ryeo Han";
-            d:isAuthor d:P27.
-d:author19  d:authorTitle "Shin Noah";
-            d:isAuthor d:P28.
-d:author20  d:authorTitle "Baba Okina";
-            d:isAuthor d:P29.
-d:author21  d:authorTitle "Gandara";
-            d:isAuthor d:P30.
+d:author1 d:authorTitle "Arakawa, Hiromu".
+d:author2 d:authorTitle "Fuse".
+d:author3 d:authorTitle "Fujikawa, Yuka".
+d:author4 d:authorTitle "Diomedea".
+d:author5 d:authorTitle "Kinema Citrus".
+d:author6 d:authorTitle "TMS Entertainment".
+d:author7 d:authorTitle "Kyoto Animation".
+d:author8 d:authorTitle "Ooima, Yoshitoki".
+d:author9 d:authorTitle "Miura, Kentarou".
+d:author10 d:authorTitle "Oda, Eiichiro".
+d:author11 d:authorTitle "Tsukushi, Akihito".
+d:author12 d:authorTitle "Kuzanagi, Mizuho".
+d:author13 d:authorTitle "ONE".
+d:author14 d:authorTitle "Ohba, Tsugumi".
+d:author15 d:authorTitle "Kinosuke, Naito".
+d:author16 d:authorTitle "Park Saenal".
+d:author17 d:authorTitle "Sadoyeon".
+d:author18 d:authorTitle "Yoo Ryeo Han".
+d:author19 d:authorTitle "Shin Noah".
+d:author20 d:authorTitle "Baba Okina".
+d:author21 d:authorTitle "Gandara".
 
 #genre
-d:genre1    d:genreTitle "Fantasy";
-            d:isGenre d:P01, d:P02, d:P03, d:P04, d:P05, d:P12, d:P13, d:P14, d:P15, d:P16, d:P17, d:P21, d:P22, d:P23, d:P24, d:P25, d:P26, d:P27, d:P28, d:P29, d:P30.
-d:genre2    d:genreTitle "Slice of Life";
-            d:isGenre d:P06, d:P07, d:P08.
-d:genre3    d:genreTitle "Comedy";
-            d:isGenre d:P09.
-d:genre4    d:genreTitle "Drama";
-            d:isGenre d:P10, d:P11, d:P18, d:P20.
-d:genre5    d:genreTitle "Shonen";
-            d:isGenre d:P19.
+d:genre1 d:genreTitle "Fantasy".
+d:genre2 d:genreTitle "Slice of Life".
+d:genre3 d:genreTitle "Comedy".
+d:genre4 d:genreTitle "Drama".
+d:genre5 d:genreTitle "Shonen".
 
-#isStatus
-d:status1   d:statusTitle "Completed";
-            d:isStatus d:P01, d:P02, d:P03, d:P04, d:P05, d:P06, d:P07, d:P08, d:P09, d:P10, d:P11, d:P12, d:P18, d:P20, d:P21.
-d:status2   d:statusTitle "Ongoing";
-            d:isStatus d:P13, d:P14, d:P16, d:P17, d:P19, d:P22, d:P23, d:P24, d:P25, d:P26, d:P27, d:P28, d:P29, d:P30.
-d:status3   d:statusTitle "Discontinued";
-            d:isStatus d:P15.
+#status
+d:status1 d:statusTitle "Completed".
+d:status2 d:statusTitle "Ongoing".
+d:status3 d:statusTitle "Discontinued".
+
+#triple
+d:P01   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P02   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P03   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P04   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P05   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P06   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P07   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P08   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P09   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P10   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P11   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P12   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P13   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P14   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P15   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P16   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P17   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P18   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P19   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P20   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P21   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P22   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P23   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P24   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P25   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P26   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P27   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P28   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P29   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
+
+d:P30   d:isType d:type1;
+        d:isAuthor d:author1;
+        d:isGenre d:genre1;
+        d:status d:status1.
 
 #data
 d:P01        d:title    "Fullmetal Alchemist: Brotherhood" ;
@@ -84,7 +203,7 @@ d:P03        d:title    "Tensei Shitara Slime Datta Ken 2nd Season" ;
              d:desc     "Second season of Tensei Shitara Slime Datta Ken." .
 
 d:P04        d:title    "Tensei Shitara Slime Datta Ken OVA" ;
-             d:desc     "The episode bundled with the 13th volume is about the Sumo competition that held at Tempest for the first time, suggested by Rimuru. The three-part OVA bundled with the 14th, 15th, and 16th manga volumes is an original trilogy written by Fuse. Rimuru has been teaching Shizue's students at Ingracia Kingdom's Freedom Academy. The time has come for the school's annual outdoor training event, where the students will test their combat skills in the field. Rimuru is determined to win the competition and take home the prize money, but he is challenged by Jeff, an honorary teacher who sees Rimuru as a rival. The competition is underway when suddenly an unexpected enemy appears!" .
+             d:desc     "The episode bundled with the 13th volume is about the Sumo competition that held at Tempest for the first time, suggested by Rimuru. The three-part OVA bundled with the 14th, 15th, and 16th manga volumes is an original trilogy written by Fuse. Rimuru has been teaching Shizue's students at Ingracia Kingdom's Freedom Academy. The time has come for the school's annual outdoor training event, where the students will test their combat skills in the field. Rimuru is determined to win the competition and take home the prize money, but he is challenged by Jeff, an honorary teacher who sees Rimuru as a rival. The competition is underway when suddenly an unexpected enemy appears!" /
 
 d:P05        d:title    "Mushoku Tensei: Isekai Ittara Honki Dasu" ;
              d:desc     "Despite being bullied, scorned, and oppressed all of his life, a thirty-four-year-old shut-in still found the resolve to attempt something heroic—only for it to end in a tragic accident. But in a twist of fate, he awakens in another world as Rudeus Greyrat, starting life again as a baby born to two loving parents. Preserving his memories and knowledge from his previous life, Rudeus quickly adapts to his new environment. With the mind of a grown adult, he starts to display magical talent that exceeds all expectations, honing his skill with the help of a mage named Roxy Migurdia. Rudeus learns swordplay from his father, Paul, and meets Sylphiette, a girl his age who quickly becomes his closest friend. As Rudeus' second chance at life begins, he tries to make the most of his new opportunity while conquering his traumatic past. And perhaps, one day, he may find the one thing he could not find in his old world—love." .
@@ -120,7 +239,7 @@ d:P15        d:title    "Berserk" ;
              d:desc     "Guts, a former mercenary now known as the Black Swordsman, is out for revenge. After a tumultuous childhood, he finally finds someone he respects and believes he can trust, only to have everything fall apart when this person takes away everything important to Guts for the purpose of fulfilling his own desires. Now marked for death, Guts becomes condemned to a fate in which he is relentlessly pursued by demonic beings. Setting out on a dreadful quest riddled with misfortune, Guts, armed with a massive sword and monstrous strength, will let nothing stop him, not even death itself, until he is finally able to take the head of the one who stripped him—and his loved one—of their humanity." ;.
 
 d:P16        d:title    "One Piece" ;
-             d:desc     "Gol D. Roger, a man referred to as the Pirate King, is set to be executed by the World Government. But just before his demise, he confirms the existence of a great treasure, One Piece, located somewhere within the vast ocean known as the Grand Line. Announcing that One Piece can be claimed by anyone worthy enough to reach it, the Pirate King is executed and the Great Age of Pirates begins. Twenty-two years later, a young man by the name of Monkey D. Luffy is ready to embark on his own adventure, searching for One Piece and striving to become the new Pirate King. Armed with just a straw hat, a small boat, and an elastic body, he sets out on a fantastic journey to gather his own crew and a worthy ship that will take them across the Grand Line to claim the greatest isStatus on the high seas." .
+             d:desc     "Gol D. Roger, a man referred to as the Pirate King, is set to be executed by the World Government. But just before his demise, he confirms the existence of a great treasure, One Piece, located somewhere within the vast ocean known as the Grand Line. Announcing that One Piece can be claimed by anyone worthy enough to reach it, the Pirate King is executed and the Great Age of Pirates begins. Twenty-two years later, a young man by the name of Monkey D. Luffy is ready to embark on his own adventure, searching for One Piece and striving to become the new Pirate King. Armed with just a straw hat, a small boat, and an elastic body, he sets out on a fantastic journey to gather his own crew and a worthy ship that will take them across the Grand Line to claim the greatest status on the high seas." .
 
 d:P17        d:title    "Made in Abyss" ;
              d:desc     "The Abyss, a hole of unprecedented depth—one young girl and a robot brave its dangers to find the truth. The town of Orth is a special one, as it is built around the edges of the massive Abyss, a wonder which has never been fully explored. Those who venture too far down never return, but those brave enough to traverse its territories are known as Cave Raiders and are heralded as legends. Within this town lives a young girl called Riko, the child of one of the most famous Cave Raiders of all time who disappeared on an expedition many years ago. One day, Riko's life changes when she meets a strange robot called Regu, who seems to appear from within the Abyss. Believing this to be a sign from her mother stuck at the bottom of the Abyss, Riko descends into its depths with Regu, ready to confront all the dangers within it." .

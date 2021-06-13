@@ -21,13 +21,17 @@
         SELECT ?Title ?Type ?Author ?Desc ?Genre ?Status
         WHERE
         { 
-            ?s  d:title ?Title;
-                d:type ?Type;
-                d:author ?Author;
-                d:desc ?Desc;
-                d:genre ?Genre;
-                d:status ?Status
-                FILTER regex(?Title, '$test')
+            ?x	d:title ?Title;
+  				      d:desc	?Desc.
+  			    ?g 	d:genreTitle ?Genre;
+  				      d:isGenre ?x.
+  			    ?a 	d:authorTitle ?Author;
+  				      d:isAuthor ?x.
+  			    ?t 	d:typeTitle ?Type;
+  				      d:isType ?x.
+  			    ?s 	d:statusTitle ?Status;
+  				      d:isStatus ?x.
+                FILTER (regex(?Title, '$test', 'i') || regex(?Type, '$test', 'i') || regex(?Author,  '$test', 'i') || regex(?Genre, '$test', 'i'))
         }
             "
     );
@@ -41,13 +45,16 @@
         SELECT ?Title ?Type ?Author ?Desc ?Genre ?Status
         WHERE
         { 
-            ?s  d:title ?Title;
-                d:type ?Type;
-                d:author ?Author;
-                d:desc ?Desc;
-                d:genre ?Genre;
-                d:status ?Status
-                d:episodeChapter ?JumlahEps
+            ?x	d:titleA ?Title;
+  				      d:desc	?Desc.
+  			    ?g 	d:genreTitle ?Genre;
+  				      d:isGenre ?x.
+  			    ?a 	d:authorTitle ?Author;
+  				      d:isAuthor ?x.
+  			    ?t 	d:typeTitle ?Type;
+  				      d:isType ?x.
+  			    ?s 	d:statusTitle ?Status;
+  				      d:isStatus ?x.
         }
             "
     );
@@ -57,7 +64,7 @@
     print "<p>Error: " . sparql_errno() . ": " . sparql_error() . "</p>";
   }
 
-  var_dump($data);
+  // var_dump($data);
   // $search = $_POST['search-aniln'];
   //         var_dump($search);
   ?>
@@ -72,7 +79,7 @@
               <span></span>
               
               <ul id="menu">
-                <a href="#"><li>Home</li></a>
+                <a href="index.html"><li>Home</li></a>
                 <a href="#"><li>Search</li></a>
               </ul>
             </div>
@@ -102,15 +109,25 @@
     </div>
     <div class=content>  
         <div class="contentContainer">
-        <p>test</p>
         <?php foreach ($data as $dat) : ?>
             <div class="contentBox">
                 <h2><?= $dat['Title'] ?></h2>
-                <p>Type&emsp;&emsp;&emsp;&emsp;: <?= $dat['Type'] ?></p>
-                <p>Author&emsp;&emsp;&emsp;: <?= $dat['Author'] ?></p>
-                <p>Genre&emsp;&emsp;&emsp; : <?= $dat['Genre'] ?></p>
-                <p>Status&emsp;&emsp;&emsp;: <?= $dat['Status'] ?></p>
-                <p>Description : <?= $dat['Desc'] ?></p>
+                <div class="contentContent">
+                <h4>Type</h4>
+                <h4>Author</h4>
+                <h4>Genre</h4>
+                <h4>Status</h4>
+                </div>
+                <div class="contentContent">
+                <p><?= $dat['Type'] ?></p>
+                <p><?= $dat['Author'] ?></p>
+                <p><?= $dat['Genre'] ?></p>
+                <p><?= $dat['Status'] ?></p>
+                </div>
+                </br>
+                <h4>Description </h4>
+                <p><?= $dat['Desc'] ?></p>
+                
                 <div class="line"></div>
             </div>
         <?php endforeach; ?>
